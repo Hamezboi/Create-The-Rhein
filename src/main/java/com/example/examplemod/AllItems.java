@@ -14,7 +14,7 @@ public class AllItems {
 
     public static final ItemEntry<Item> EXAMPLE_ITEM = ExampleMod.REGISTRATE
             .item("example_item", Item::new)
-            .model((c, p) -> p.generated(c::getEntry, ResourceLocation.withDefaultNamespace("item/amethyst_shard")))
+            .model((c, p) -> p.generated(c::getEntry, new ResourceLocation("minecraft", "item/amethyst_shard")))
             .register();
 
     /**
@@ -22,7 +22,7 @@ public class AllItems {
      */
     public static final ItemEntry<Item> EXAMPLE_RESULT = ExampleMod.REGISTRATE
             .item("example_result", Item::new)
-            .model((c, p) -> p.generated(c::getEntry, ResourceLocation.withDefaultNamespace("item/netherite_ingot")))
+            .model((c, p) -> p.generated(c::getEntry, new ResourceLocation("minecraft", "item/netherite_ingot")))
             .register();
 
     /**
@@ -30,7 +30,7 @@ public class AllItems {
      */
     public static final ItemEntry<Item> INCOMPLETE_EXAMPLE = ExampleMod.REGISTRATE
             .item("incomplete_example", Item::new)
-            .model((c, p) -> p.generated(c::getEntry, ResourceLocation.withDefaultNamespace("item/brick")))
+            .model((c, p) -> p.generated(c::getEntry, new ResourceLocation("minecraft", "item/brick")))
             .register();
 
     public static void register() {

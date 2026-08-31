@@ -11,7 +11,7 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
-import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.ModelFile;
 
 /**
  * Block registration.
@@ -28,8 +28,8 @@ public class AllBlocks {
             .properties(p -> p.noOcclusion())
             .blockstate((ctx, prov) -> {
                 ModelFile model = encasedShaftModel(prov, ctx.getName(),
-                        ResourceLocation.withDefaultNamespace("block/stripped_spruce_log"),
-                        ResourceLocation.withDefaultNamespace("block/spruce_planks"));
+                        new ResourceLocation("minecraft", "block/stripped_spruce_log"),
+                        new ResourceLocation("minecraft", "block/spruce_planks"));
                 BlockStateGen.axisBlock(ctx, prov, state -> model);
             })
             // here is where you can adjust how much stress your block scales with (for example rpm x 128 for this block is the amount of su)
@@ -49,8 +49,8 @@ public class AllBlocks {
             .properties(p -> p.noOcclusion())
             .blockstate((ctx, prov) -> {
                 ModelFile model = encasedShaftModel(prov, ctx.getName(),
-                        ResourceLocation.withDefaultNamespace("block/polished_andesite"),
-                        ResourceLocation.withDefaultNamespace("block/chiseled_polished_blackstone"));
+                        new ResourceLocation("minecraft", "block/polished_andesite"),
+                        new ResourceLocation("minecraft", "block/chiseled_polished_blackstone"));
                 BlockStateGen.axisBlock(ctx, prov, state -> model);
             })
             .transform(DisplaySource.displaySource(AllDisplaySources.EXAMPLE_SOURCE))
@@ -70,7 +70,7 @@ public class AllBlocks {
     private static ModelFile encasedShaftModel(RegistrateBlockstateProvider prov, String name,
                                                ResourceLocation casing, ResourceLocation cap) {
         return prov.models()
-                .withExistingParent(name, ResourceLocation.withDefaultNamespace("block/block"))
+                .withExistingParent(name, new ResourceLocation("minecraft", "block/block"))
                 .texture("particle", casing)
                 .texture("casing", casing)
                 .texture("cap", cap)

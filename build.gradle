@@ -18,11 +18,14 @@ repositories {
     mavenCentral()
     mavenLocal()
 
-    // Create
+    // Create, Ponder, Flywheel
     maven { url = "https://maven.createmod.net" }
 
-    // Create dependencies
+    // Registrate
     maven { url = "https://maven.ithundxr.dev/mirror" }
+
+    // ForgeConfigAPIPort
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
 }
 
 minecraft {
@@ -34,6 +37,9 @@ minecraft {
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
+            
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             mods {
                 "${mod_id}" {
@@ -121,6 +127,9 @@ dependencies {
     implementation(fg.deobf(
             "com.tterrag.registrate:Registrate:${registrate_version}"
     ))
+    // MixinExtras
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
+    implementation("io.github.llamalad7:mixinextras-forge:0.4.1")
 }
 
 processResources {
