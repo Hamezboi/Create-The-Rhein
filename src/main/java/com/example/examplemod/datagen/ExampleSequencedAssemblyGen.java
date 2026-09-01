@@ -29,6 +29,6 @@ public class ExampleSequencedAssemblyGen extends SequencedAssemblyRecipeGen {
             .addStep(PressingRecipe::new, rb -> rb));
 
     public ExampleSequencedAssemblyGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

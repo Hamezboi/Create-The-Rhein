@@ -116,7 +116,7 @@ result with `git diff`. Once you're happy, delete `gradle/rename-mod.gradle` and
 Finish up in `gradle.properties` (author, description, version, license):
 
 ```properties
-mod_version=0.1.0
+mod_version=0.1.4
 mod_authors=YourName
 mod_description=Your mod description.
 mod_license=MIT

@@ -1,22 +1,28 @@
 package com.example.examplemod;
 
-import com.tterrag.registrate.util.entry.RegistryEntry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 public class AllCreativeModeTabs {
 
-    public static final RegistryEntry<CreativeModeTab, CreativeModeTab> MAIN_TAB =
-            ExampleMod.REGISTRATE.defaultCreativeTab("main_tab", builder ->
-                    builder
-                            .title(Component.translatable(Lang.CREATIVE_TAB))
-                            .icon(() -> new ItemStack(Items.HONEYCOMB))  // Replace with your own icon
-                            .build()
-            ).register();
+    public static final DeferredRegister<CreativeModeTab> REGISTER =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ExampleMod.ID);
 
-    public static void register() {
-        // Force class loading to trigger Registrate calls
+    public static final RegistryObject<CreativeModeTab> MAIN_TAB =
+            REGISTER.register("main_tab", () ->
+                    CreativeModeTab.builder()
+                            .title(Component.translatable(Lang.CREATIVE_TAB))
+                            .icon(() -> new ItemStack(Items.HONEYCOMB))
+                            .build()
+            );
+
+    public static void register(IEventBus modBus) {
+        REGISTER.register(modBus);
     }
 }

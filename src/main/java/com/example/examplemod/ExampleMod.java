@@ -46,22 +46,18 @@ public class ExampleMod {
                             .andThen(TooltipModifier.mapNull(KineticStats.create(item)))
             );
 
-    public ExampleMod(IEventBus modBus) {
-        REGISTRATE.registerEventListeners(modBus);
+public ExampleMod(IEventBus modBus) {
+    REGISTRATE.registerEventListeners(modBus);
 
-        AllCreativeModeTabs.register();
-        REGISTRATE.setCreativeTab(AllCreativeModeTabs.MAIN_TAB);
-        registerLangPartials();
-        registerPonderLang();
-        AllItems.register();
-        AllDisplaySources.register();
-        AllBlocks.register();
-        AllBlockEntityTypes.register();
+    AllCreativeModeTabs.register(modBus);
+    REGISTRATE.setCreativeTab(AllCreativeModeTabs.MAIN_TAB);
 
-        modBus.addListener(this::onCommonSetup);
-        modBus.addListener(this::onClientSetup);
-        modBus.addListener(this::onGatherData);
-    }
+    registerLangPartials();
+    registerPonderLang();
+    AllItems.register();
+    AllDisplaySources.register();
+    AllBlocks.register();
+}
 
     public static ResourceLocation asResource(String path) {
         return new ResourceLocation(ID, path);

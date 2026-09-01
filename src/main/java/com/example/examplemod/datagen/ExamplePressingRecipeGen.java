@@ -21,6 +21,6 @@ public class ExamplePressingRecipeGen extends PressingRecipeGen {
             .output(AllItems.EXAMPLE_ITEM.get()));
 
     public ExamplePressingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

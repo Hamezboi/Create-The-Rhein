@@ -23,6 +23,6 @@ public class ExampleDeployingRecipeGen extends DeployingRecipeGen {
             .output(AllItems.EXAMPLE_RESULT.get()));
 
     public ExampleDeployingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

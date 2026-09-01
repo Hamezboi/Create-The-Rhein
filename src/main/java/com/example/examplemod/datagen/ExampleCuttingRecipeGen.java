@@ -21,6 +21,6 @@ public class ExampleCuttingRecipeGen extends CuttingRecipeGen {
             .duration(50));
 
     public ExampleCuttingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

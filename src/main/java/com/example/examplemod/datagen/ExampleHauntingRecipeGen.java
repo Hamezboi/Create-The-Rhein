@@ -19,6 +19,6 @@ public class ExampleHauntingRecipeGen extends HauntingRecipeGen {
     GeneratedRecipe EXAMPLE = convert(AllItems.EXAMPLE_ITEM.get(), AllItems.EXAMPLE_RESULT.get());
 
     public ExampleHauntingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

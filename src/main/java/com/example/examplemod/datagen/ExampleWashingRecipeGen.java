@@ -20,6 +20,6 @@ public class ExampleWashingRecipeGen extends WashingRecipeGen {
             b -> b.require(Items.DIRT).output(AllItems.EXAMPLE_ITEM.get()));
 
     public ExampleWashingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

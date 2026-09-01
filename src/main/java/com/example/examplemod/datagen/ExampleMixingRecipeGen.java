@@ -25,6 +25,6 @@ public class ExampleMixingRecipeGen extends MixingRecipeGen {
             .requiresHeat(HeatCondition.HEATED));
 
     public ExampleMixingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

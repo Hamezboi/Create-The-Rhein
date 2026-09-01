@@ -23,6 +23,6 @@ public class ExampleCrushingRecipeGen extends CrushingRecipeGen {
             .duration(150));
 
     public ExampleCrushingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

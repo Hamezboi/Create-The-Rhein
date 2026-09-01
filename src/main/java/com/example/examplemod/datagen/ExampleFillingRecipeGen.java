@@ -23,6 +23,6 @@ public class ExampleFillingRecipeGen extends FillingRecipeGen {
             .output(Items.WATER_BUCKET));
 
     public ExampleFillingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

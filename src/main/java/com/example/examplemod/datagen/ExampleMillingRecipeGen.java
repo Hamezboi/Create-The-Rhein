@@ -21,6 +21,6 @@ public class ExampleMillingRecipeGen extends MillingRecipeGen {
             .duration(100));
 
     public ExampleMillingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

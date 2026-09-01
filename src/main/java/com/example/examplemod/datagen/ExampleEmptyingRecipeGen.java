@@ -10,7 +10,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.material.Fluids;
-import net.neoforged.neoforge.fluids.FluidStack;
+import net.minecraftforge.fluids.FluidStack;
 
 /**
  * Emptying recipe generator. Shows a fluid result, declared with withFluidOutputs.
@@ -23,6 +23,6 @@ public class ExampleEmptyingRecipeGen extends EmptyingRecipeGen {
             .withFluidOutputs(new FluidStack(Fluids.WATER, 1000)));
 
     public ExampleEmptyingRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, ExampleMod.ID);
+        super(output, ExampleMod.ID);
     }
 }

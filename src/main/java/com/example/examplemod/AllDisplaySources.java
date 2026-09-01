@@ -10,7 +10,7 @@ import com.tterrag.registrate.util.entry.RegistryEntry;
  */
 public class AllDisplaySources {
 
-    public static final RegistryEntry<DisplaySource, ExampleDisplaySource> EXAMPLE_SOURCE = ExampleMod.REGISTRATE
+    public static final RegistryEntry<ExampleDisplaySource> EXAMPLE_SOURCE = ExampleMod.REGISTRATE
             .displaySource("example_source", ExampleDisplaySource::new)
             .register();
 
