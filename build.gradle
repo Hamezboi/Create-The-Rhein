@@ -8,6 +8,8 @@ plugins {
 version = mod_version
 group = mod_group_id
 
+apply from: 'gradle/rename-mod.gradle'
+
 base {
     archivesName = mod_id
 }
