@@ -62,3 +62,4 @@ public abstract class AbstractSteamEngineBlockEntity
     public IFluidHandler handlerForCapability() {
         return new CombinedTankWrapper(steamTank);
     }
+}
