@@ -1,4 +1,4 @@
-package com.hamezboi.createrhine.content.engines.base;
+package com.example.examplemod.content.engines.digital;
 
 import com.simibubi.create.foundation.fluid.CombinedTankWrapper;
 

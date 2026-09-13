@@ -37,7 +37,7 @@ import org.apache.logging.log4j.Logger;
 
 @Mod(ExampleMod.ID)
 public class ExampleMod {
-    public static final String ID = "createrhine";
+    public static final String ID = "examplemod";
     public static final Logger LOGGER = LogManager.getLogger(ID);
 
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(ID)
