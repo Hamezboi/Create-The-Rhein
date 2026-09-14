@@ -1,6 +1,6 @@
 package com.hamezboi.ctr.content.templatestuff.ponder;
 
-import com.hamezboi.ctr.content.ponder.util.PonderScene;
+import com.hamezboi.ctr.content.templatestuff.ponder.util.PonderScene;
 import com.simibubi.create.AllSoundEvents;
 import com.simibubi.create.content.redstone.deskBell.DeskBellBlockEntity;
 import com.simibubi.create.foundation.ponder.CreateSceneBuilder;

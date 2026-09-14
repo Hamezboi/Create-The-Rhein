@@ -2,7 +2,7 @@ package com.hamezboi.ctr;
 
 import java.util.concurrent.CompletableFuture;
 
-import com.hamezboi.ctr.content.ponder.ExamplePonderPlugin;
+import com.hamezboi.ctr.content.templatestuff.ponder.ExamplePonderPlugin;
 import com.hamezboi.ctr.datagen.ExampleCompactingRecipeGen;
 import com.hamezboi.ctr.datagen.ExampleCrushingRecipeGen;
 import com.hamezboi.ctr.datagen.ExampleCuttingRecipeGen;

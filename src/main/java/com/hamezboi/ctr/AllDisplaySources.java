@@ -1,6 +1,6 @@
 package com.hamezboi.ctr;
 
-import com.hamezboi.ctr.content.display.ExampleDisplaySource;
+import com.hamezboi.ctr.content.templatestuff.display.ExampleDisplaySource;
 import com.simibubi.create.api.behaviour.display.DisplaySource;
 import com.tterrag.registrate.util.entry.RegistryEntry;
 
