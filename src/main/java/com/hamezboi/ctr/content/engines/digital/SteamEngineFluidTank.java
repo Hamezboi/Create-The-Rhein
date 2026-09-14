@@ -6,6 +6,7 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class SteamEngineFluidTank extends SmartFluidTank {
 

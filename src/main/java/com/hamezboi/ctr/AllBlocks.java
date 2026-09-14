@@ -1,7 +1,5 @@
 package com.hamezboi.ctr;
 
-import com.hamezboi.ctr.content.kinetics.ExampleGeneratorBlock;
-import com.hamezboi.ctr.content.kinetics.ExampleKineticBlock;
 import com.simibubi.create.api.behaviour.display.DisplaySource;
 import com.simibubi.create.api.stress.BlockStressValues;
 import com.simibubi.create.foundation.data.BlockStateGen;
@@ -21,7 +19,7 @@ public class AllBlocks {
     /**
      * A kinetic block that draws stress from the network. Its blockstate is generated as
      * an axis-aligned column and it reuses vanilla textures; swap them for your own.
-     */
+     *
     public static final BlockEntry<ExampleKineticBlock> EXAMPLE_KINETIC_BLOCK = CTR.REGISTRATE
             .block("example_kinetic_block", ExampleKineticBlock::new)
             .initialProperties(() -> Blocks.ANDESITE)
@@ -42,7 +40,7 @@ public class AllBlocks {
      * A kinetic generator, the counterpart to EXAMPLE_KINETIC_BLOCK; its capacity is
      * registered in CTR. The transform call attaches the EXAMPLE_SOURCE display
      * source to this block.
-     */
+     *
     public static final BlockEntry<ExampleGeneratorBlock> EXAMPLE_GENERATOR_BLOCK = CTR.REGISTRATE
             .block("example_generator_block", ExampleGeneratorBlock::new)
             .initialProperties(() -> Blocks.POLISHED_ANDESITE)
@@ -59,7 +57,7 @@ public class AllBlocks {
             .build()
             .register();
 
-    /**
+    
      * Builds an "encased shaft" style model: a casing box inset by 2px on the rotation
      * axis so the shaft rendered by ExampleShaftRenderer visibly pokes out of both ends.
      * The box is authored along the Y axis (caps on top and bottom); BlockStateGen.axisBlock
