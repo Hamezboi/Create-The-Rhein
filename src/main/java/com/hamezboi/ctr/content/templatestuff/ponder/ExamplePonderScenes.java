@@ -1,4 +1,4 @@
-package com.hamezboi.ctr.content.ponder;
+package com.hamezboi.ctr.content.templatestuff.ponder;
 
 import com.simibubi.create.foundation.ponder.CreateSceneBuilder;
 import net.createmod.ponder.api.PonderPalette;

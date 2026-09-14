@@ -20,45 +20,13 @@ public class SteamEngineFluidTank extends SmartFluidTank {
             int capacity,
             boolean extractionAllowed,
             boolean insertionAllowed,
-            Consumer<FluidStack> updateCallback
-    ) {
-        super(capacity, updateCallback);
-        this.extractionAllowed = extractionAllowed;
-        this.insertionAllowed = insertionAllowed;
-        this.allowedFluids = null;
-        this.fluidBlacklist = null;
-    }
-
-    // Constructor 2: whitelist
-    public SteamEngineFluidTank(
-            int capacity,
-            boolean extractionAllowed,
-            boolean insertionAllowed,
-            TagKey<Fluid> allowedFluid,
-            Consumer<FluidStack> updateCallback
-    ) {
-        super(capacity, updateCallback);
-        this.extractionAllowed = extractionAllowed;
-        this.insertionAllowed = insertionAllowed;
-        this.allowedFluids = allowedFluid;
-        this.fluidBlacklist = null;
-    }
-
-    // Constructor 3: blacklist
-    public SteamEngineFluidTank(
-            int capacity,
-            boolean extractionAllowed,
-            boolean insertionAllowed,
             Consumer<FluidStack> updateCallback,
-            TagKey<Fluid> fluidBlacklist
-    ) {
-        super(capacity, updateCallback);
-        this.extractionAllowed = extractionAllowed;
-        this.insertionAllowed = insertionAllowed;
-        this.allowedFluids = null;
-        this.fluidBlacklist = fluidBlacklist;
-    }
-
+            Predicate<FluidStack> validator) {
+                super(capacity,updateCallback);
+                this.extractionAllowed - extractionAllowed
+                this.insertionAllowed - insertionAllowed
+                this.validator - validator
+            }
 
     @Override
     public FluidStack drain(FluidStack resource, FluidAction action) {

@@ -1,4 +1,4 @@
-package com.hamezboi.ctr.content.kinetics;
+package com.hamezboi.ctr.content.templatestuff.kinetics;
 
 import com.simibubi.create.AllPartialModels;
 import com.simibubi.create.content.kinetics.base.KineticBlockEntity;

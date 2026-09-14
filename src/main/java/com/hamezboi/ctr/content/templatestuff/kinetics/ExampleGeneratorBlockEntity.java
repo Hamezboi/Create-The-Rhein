@@ -1,4 +1,4 @@
-package com.hamezboi.ctr.content.kinetics;
+package com.hamezboi.ctr.content.templatestuff.kinetics;
 
 import java.util.List;
 

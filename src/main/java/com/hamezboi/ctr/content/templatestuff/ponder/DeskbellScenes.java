@@ -1,4 +1,4 @@
-package com.hamezboi.ctr.content.ponder;
+package com.hamezboi.ctr.content.templatestuff.ponder;
 
 import com.hamezboi.ctr.content.ponder.util.PonderScene;
 import com.simibubi.create.AllSoundEvents;

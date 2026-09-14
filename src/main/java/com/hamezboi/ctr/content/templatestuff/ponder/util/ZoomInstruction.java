@@ -1,4 +1,4 @@
-package com.hamezboi.ctr.content.ponder.util;
+package com.hamezboi.ctr.content.templatestuff.ponder.util;
 
 import com.hamezboi.ctr.mixin.PonderSceneAccessor;
 import net.createmod.ponder.foundation.PonderScene;

@@ -1,4 +1,4 @@
-package com.hamezboi.ctr.content.kinetics;
+package com.hamezboi.ctr.content.templatestuff.kinetics;
 
 import com.hamezboi.ctr.AllBlockEntityTypes;
 import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;

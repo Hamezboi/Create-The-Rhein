@@ -1,4 +1,4 @@
-package com.hamezboi.ctr.content.display;
+package com.hamezboi.ctr.content.templatestuff.display;
 
 import java.util.List;
 
