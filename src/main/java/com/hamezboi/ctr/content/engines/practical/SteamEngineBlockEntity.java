@@ -1,1 +1,1 @@
-package.com.hamezboi.ctr.content.engines.practical;
+package com.hamezboi.ctr.content.engines.practical;
