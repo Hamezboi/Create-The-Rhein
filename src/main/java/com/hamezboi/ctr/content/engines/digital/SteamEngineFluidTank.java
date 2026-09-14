@@ -23,9 +23,9 @@ public class SteamEngineFluidTank extends SmartFluidTank {
             Consumer<FluidStack> updateCallback,
             Predicate<FluidStack> validator) {
                 super(capacity,updateCallback);
-                this.extractionAllowed - extractionAllowed
-                this.insertionAllowed - insertionAllowed
-                this.validator - validator
+                this.extractionAllowed - extractionAllowed;
+                this.insertionAllowed - insertionAllowed;
+                this.validator - validator;
             }
 
     @Override
