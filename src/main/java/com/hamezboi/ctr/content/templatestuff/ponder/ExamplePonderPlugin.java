@@ -22,8 +22,8 @@ public class ExamplePonderPlugin implements PonderPlugin {
 
     @Override
     public void registerScenes(PonderSceneRegistrationHelper<ResourceLocation> helper) {
-        helper.forComponents(AllBlocks.EXAMPLE_KINETIC_BLOCK.getId())
-                .addStoryBoard("example_ponder", ExamplePonderScenes::examplePonder);
+    //    helper.forComponents(AllBlocks.EXAMPLE_KINETIC_BLOCK.getId())
+    //            .addStoryBoard("example_ponder", ExamplePonderScenes::examplePonder);
 
         helper.forComponents(com.simibubi.create.AllBlocks.DESK_BELL.getId())
                 .addStoryBoard("desk_bell", DeskbellScenes::intro);
