@@ -1,0 +1,18 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:flint"
+    }
+  ]
+}

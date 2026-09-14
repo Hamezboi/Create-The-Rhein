@@ -8,8 +8,6 @@ plugins {
 version = mod_version
 group = mod_group_id
 
-apply from: 'gradle/rename-mod.gradle'
-
 base {
     archivesName = mod_id
 }
@@ -82,6 +80,9 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
 
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            
             args '--mod', mod_id,
                     '--all',
                     '--output', file('src/generated/resources/'),

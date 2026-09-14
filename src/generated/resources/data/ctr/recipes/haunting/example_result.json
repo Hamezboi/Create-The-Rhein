@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "ctr:example_item"
+    }
+  ],
+  "results": [
+    {
+      "item": "ctr:example_result"
+    }
+  ]
+}
